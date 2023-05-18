@@ -37,6 +37,7 @@ pub mod folio;
 pub mod fs;
 pub mod init;
 pub mod ioctl;
+pub mod mount;
 pub mod prelude;
 pub mod print;
 mod static_assert;
