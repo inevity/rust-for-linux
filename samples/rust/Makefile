@@ -4,5 +4,6 @@ obj-$(CONFIG_SAMPLE_RUST_MINIMAL)		+= rust_minimal.o
 obj-$(CONFIG_SAMPLE_RUST_INPLACE)		+= rust_inplace.o
 obj-$(CONFIG_SAMPLE_RUST_PRINT)			+= rust_print.o
 obj-$(CONFIG_SAMPLE_RUST_ROFS)			+= rust_rofs.o
+obj-$(CONFIG_SAMPLE_PUZZLEFS)			+= puzzlefs.o
 
 subdir-$(CONFIG_SAMPLE_RUST_HOSTPROGS)		+= hostprogs
