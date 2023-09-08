@@ -7,7 +7,12 @@
  */
 
 #include <linux/errname.h>
+#include <linux/fs.h>
+#include <linux/file.h>
+#include <linux/fs_context.h>
+#include <linux/namei.h>
 #include <linux/slab.h>
+#include <linux/pagemap.h>
 #include <linux/refcount.h>
 #include <linux/wait.h>
 #include <linux/sched.h>
@@ -16,3 +21,9 @@
 const size_t BINDINGS_ARCH_SLAB_MINALIGN = ARCH_SLAB_MINALIGN;
 const gfp_t BINDINGS_GFP_KERNEL = GFP_KERNEL;
 const gfp_t BINDINGS___GFP_ZERO = __GFP_ZERO;
+
+const slab_flags_t BINDINGS_SLAB_RECLAIM_ACCOUNT = SLAB_RECLAIM_ACCOUNT;
+const slab_flags_t BINDINGS_SLAB_MEM_SPREAD = SLAB_MEM_SPREAD;
+
+const loff_t BINDINGS_MAX_LFS_FILESIZE = MAX_LFS_FILESIZE;
+const size_t BINDINGS_PAGE_SIZE = PAGE_SIZE;
